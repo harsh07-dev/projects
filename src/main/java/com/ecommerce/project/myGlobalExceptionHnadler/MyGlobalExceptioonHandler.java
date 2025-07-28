@@ -21,14 +21,15 @@ public class MyGlobalExceptioonHandler {
 //			String message =err.getDefaultMessage();
 //			response.put(fieldName, message);
 //		});
-//		return response;
-//		
+//		return response;		
 //	}
 	@ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<String> myResourceNotFoundException(ResourceNotFoundException e) {
         String message = e.getMessage();
         return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
     }
+	
+	
 	
 	@ExceptionHandler(APIException.class)
     public ResponseEntity<String> myAPIException(APIException e) {
