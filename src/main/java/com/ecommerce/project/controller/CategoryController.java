@@ -28,7 +28,7 @@ import com.ecommerce.project.payloadDTO.CategoryResponse;
 import com.ecommerce.project.service.CategoryService;
 
 
-//featur2 brach changes . not in feature 1
+// i am adding to check if my code is working line 31.
 
 @RestController
 @RequestMapping("/api/public")
